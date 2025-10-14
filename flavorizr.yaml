@@ -1,0 +1,24 @@
+flavors:
+  dev:
+    app:
+      name: "Flutter Dev App"
+
+    android:
+      applicationId: "com.env.dev"
+    ios:
+      bundleId: "com.env.dev"
+  staging:
+    app:
+      name: "Flutter Staging App"
+    android:
+      applicationId: "com.env.staging"
+    ios:
+      bundleId: "com.env.staging"
+  prod:
+    app:
+      name: "Flutter App"
+
+    android:
+      applicationId: "com.env"
+    ios:
+      bundleId: "com.env"
