@@ -6,19 +6,19 @@ android.apply {
     flavorDimensions("flavor-type")
 
     productFlavors {
-        create("dev") {
+        create("development") {
             dimension = "flavor-type"
-            applicationId = "com.env.dev"
+            applicationId = "com.example.flutter_env_flavor.dev"
             resValue(type = "string", name = "app_name", value = "Flutter Dev App")
         }
         create("staging") {
             dimension = "flavor-type"
-            applicationId = "com.env.staging"
+            applicationId = "com.example.flutter_env_flavor.staging"
             resValue(type = "string", name = "app_name", value = "Flutter Staging App")
         }
-        create("prod") {
+        create("production") {
             dimension = "flavor-type"
-            applicationId = "com.env"
+            applicationId = "com.example.flutter_env_flavor"
             resValue(type = "string", name = "app_name", value = "Flutter App")
         }
     }

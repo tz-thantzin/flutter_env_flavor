@@ -1,24 +1,24 @@
 flavors:
-  dev:
+  development:
     app:
       name: "Flutter Dev App"
 
     android:
-      applicationId: "com.env.dev"
+      applicationId: "com.example.flutter_env_flavor.dev"
     ios:
-      bundleId: "com.env.dev"
+      bundleId: "com.example.flutter_env_flavor.dev"
   staging:
     app:
       name: "Flutter Staging App"
     android:
-      applicationId: "com.env.staging"
+      applicationId: "com.example.flutter_env_flavor.staging"
     ios:
-      bundleId: "com.env.staging"
-  prod:
+      bundleId: "com.example.flutter_env_flavor.staging"
+  production:
     app:
       name: "Flutter App"
 
     android:
-      applicationId: "com.env"
+      applicationId: "com.example.flutter_env_flavor"
     ios:
-      bundleId: "com.env"
+      bundleId: "com.example.flutter_env_flavor"

@@ -33,4 +33,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/configs/
+    - development.configs.json
+    - staging.configs.json
+    - production.configs.json

@@ -1,4 +1,4 @@
-enum Flavor { dev, staging, prod }
+enum Flavor { development, staging, production }
 
 class F {
   static late final Flavor appFlavor;
@@ -7,12 +7,14 @@ class F {
 
   static String get title {
     switch (appFlavor) {
-      case Flavor.dev:
+      case Flavor.development:
         return 'Flutter Dev App';
       case Flavor.staging:
         return 'Flutter Staging App';
-      case Flavor.prod:
+      case Flavor.production:
         return 'Flutter App';
     }
   }
+
+  static String get envFileName => '${appFlavor.name}.configs.json';
 }

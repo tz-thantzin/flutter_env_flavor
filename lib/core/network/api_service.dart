@@ -11,7 +11,10 @@ class ApiService extends BaseAPI {
 
   Future<List<dynamic>> getPosts() {
     return request(
-      call: () => client.get(Uri.parse("$baseUrl/posts")),
+      call: () => client.get(
+        Uri.parse("$baseUrl/posts"),
+        headers: {"Accept": "application/json"},
+      ),
       parser: (json) => json as List<dynamic>,
     );
   }
