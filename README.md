@@ -6,6 +6,7 @@ This project demonstrates how to configure **multiple environment
 flavors** (`development`, `staging`, `production`) in Flutter.\
 Flavors allow you to create separate app configurations (e.g., package
 IDs, app names, Firebase setups) for each environment.
+
 ------------------------------------------------------------------------
 
 ## Building & Running Flavors
