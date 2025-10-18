@@ -1,16 +1,49 @@
-# flutter_env_flavor
+[![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg)](https://buymeacoffee.com/devthantziq)
 
-A new Flutter project.
+# Flutter Environment Flavors Setup
 
-## Getting Started
+This project demonstrates how to configure **multiple environment
+flavors** (`development`, `staging`, `production`) in Flutter.\
+Flavors allow you to create separate app configurations (e.g., package
+IDs, app names, Firebase setups) for each environment.
+------------------------------------------------------------------------
 
-This project is a starting point for a Flutter application.
+## Building & Running Flavors
 
-A few resources to get you started if this is your first Flutter project:
+### Android
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+``` bash
+flutter run --flavor development -t lib/main_development.dart
+flutter run --flavor staging -t lib/main_staging.dart
+flutter run --flavor production -t lib/main_production.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### iOS
+
+``` bash
+flutter run --flavor development -t lib/main_development.dart
+flutter run --flavor staging -t lib/main_staging.dart
+flutter run --flavor production -t lib/main_production.dart
+```
+
+### Build Release APKs
+
+``` bash
+flutter build apk --flavor development -t lib/main_development.dart
+flutter build apk --flavor staging -t lib/main_staging.dart
+flutter build apk --flavor production -t lib/main_production.dart
+```
+
+### Build iOS IPA
+
+``` bash
+flutter build ipa --flavor development -t lib/main_development.dart
+flutter build ipa --flavor staging -t lib/main_staging.dart
+flutter build ipa --flavor production -t lib/main_production.dart
+```
+
+------------------------------------------------------------------------
+
+## ❤️ Support
+
+Hi 👋 If you find this is useful, you can [buy me a coffee](https://buymeacoffee.com/devthantziq) ☕ to support my work and make my sleepless nights easier.
