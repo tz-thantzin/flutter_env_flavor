@@ -16,5 +16,6 @@ class F {
     }
   }
 
-  static String get envFileName => '${appFlavor.name}.configs.json';
+  static String get envFileName =>
+      'assets/configs/${appFlavor.name}.configs.json';
 }
